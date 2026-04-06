@@ -1,4 +1,5 @@
 import heroFactory from "@/assets/hero-factory.jpg";
+import cortaLogo from "@/assets/corta-logo.png";
 
 const HeroSection = () => {
   return (
@@ -24,6 +25,17 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm mb-8">
           <span className="pulse-dot bg-accent" />
           <span className="text-sm font-medium text-muted-foreground">Enterprise Manufacturing Intelligence Platform</span>
+        </div>
+
+        {/* Logo */}
+        <div className="flex justify-center mb-6">
+          <img
+            src={cortaLogo}
+            alt="CORTA-PL Logo"
+            className="w-20 h-20 md:w-24 md:h-24 animate-fade-in"
+            width={96}
+            height={96}
+          />
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">

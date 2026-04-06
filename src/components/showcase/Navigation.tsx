@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Factory, Shield, FileCheck, Tablet, Menu, X } from "lucide-react";
+import { Shield, FileCheck, Tablet, Menu, X, Factory } from "lucide-react";
+import cortaLogo from "@/assets/corta-logo.png";
 
 const navItems = [
   { label: "MES", href: "#mes", icon: Factory },
@@ -25,12 +26,10 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
-            <div className="w-3 h-3 rounded-sm bg-primary" />
-          </div>
+        <a href="#" className="flex items-center gap-3 hover-scale">
+          <img src={cortaLogo} alt="CORTA-PL Logo" className="w-8 h-8" width={32} height={32} />
           <span className="font-bold text-lg tracking-tight">CORTA-PL</span>
-        </div>
+        </a>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
