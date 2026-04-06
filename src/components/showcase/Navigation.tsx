@@ -27,7 +27,7 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 hover-scale">
-          <img src={cortaLogo} alt="CORTA-PL Logo" className="w-8 h-8" width={32} height={32} />
+          <img src={cortaLogo} alt="CORTA-PL Logo" className="h-8 w-auto" height={32} />
           <span className="font-bold text-lg tracking-tight">CORTA-PL</span>
         </a>
 

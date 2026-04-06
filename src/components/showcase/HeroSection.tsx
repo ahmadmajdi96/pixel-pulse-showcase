@@ -32,7 +32,7 @@ const HeroSection = () => {
           <img
             src={cortaLogo}
             alt="CORTA-PL Logo"
-            className="w-20 h-20 md:w-24 md:h-24 animate-fade-in"
+            className="h-20 md:h-24 w-auto animate-fade-in"
             width={96}
             height={96}
           />
