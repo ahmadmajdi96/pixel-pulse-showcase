@@ -143,7 +143,7 @@ const ModuleShowcase = () => {
                 <ImpactCard metrics={group.impact} colorVar={group.colorVar} />
 
                 {/* App cards */}
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {group.apps.map((app) => (
                     <div key={app.title} className="benefit-card group">
                       <div className="flex items-start gap-3">

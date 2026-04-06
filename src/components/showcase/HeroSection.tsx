@@ -21,45 +21,43 @@ const HeroSection = () => {
       <div className="absolute inset-0 grid-pattern opacity-30" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm mb-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-0">
+        <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm mb-6 sm:mb-8">
           <span className="pulse-dot bg-accent" />
-          <span className="text-sm font-medium text-muted-foreground">Enterprise Manufacturing Intelligence Platform</span>
+          <span className="text-xs sm:text-sm font-medium text-muted-foreground">Enterprise Manufacturing Intelligence Platform</span>
         </div>
 
         {/* Logo */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-4 sm:mb-6">
           <img
             src={cortaLogo}
             alt="CORTA-PL Logo"
-            className="h-20 md:h-24 w-auto animate-fade-in"
-            width={96}
-            height={96}
+            className="h-16 sm:h-20 md:h-24 w-auto animate-fade-in"
           />
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4 sm:mb-6">
           <span className="gradient-text">CORTA-PL</span>
           <br />
           <span className="text-foreground">Production Suite</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2">
           A unified ecosystem of MES, QMS, and CMS applications purpose-built for 
           food manufacturing — from the control room to the factory floor.
         </p>
 
         {/* Key stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 max-w-4xl mx-auto">
           {[
             { value: "3", label: "Core Platforms" },
             { value: "13+", label: "Edge Applications" },
             { value: "100+", label: "Feature Screens" },
             { value: "ISA-95", label: "Compliant" },
           ].map((stat) => (
-            <div key={stat.label} className="data-card text-center backdrop-blur-sm bg-card/60">
-              <div className="metric-value text-primary">{stat.value}</div>
-              <div className="metric-label mt-1">{stat.label}</div>
+            <div key={stat.label} className="data-card text-center backdrop-blur-sm bg-card/60 p-4 sm:p-6">
+              <div className="metric-value text-primary text-xl sm:text-3xl">{stat.value}</div>
+              <div className="metric-label mt-1 text-[10px] sm:text-xs">{stat.label}</div>
             </div>
           ))}
         </div>
