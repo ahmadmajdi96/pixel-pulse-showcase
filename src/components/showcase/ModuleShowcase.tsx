@@ -57,7 +57,7 @@ const ModuleShowcase = () => {
               <ImpactCard metrics={mod.impact} colorVar={mod.colorVar} />
 
               {/* Features Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {mod.features.map((feat) => (
                   <div key={feat.title} className="benefit-card group">
                     <div className="flex items-start gap-3">
