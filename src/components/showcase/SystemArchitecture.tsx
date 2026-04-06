@@ -23,7 +23,7 @@ const layers = [
 
 const SystemArchitecture = () => {
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">System Architecture</h2>
