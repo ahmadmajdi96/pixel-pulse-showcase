@@ -58,7 +58,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="py-24 px-6 relative">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 relative">
       <div className="absolute inset-0 hero-gradient opacity-50" />
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
