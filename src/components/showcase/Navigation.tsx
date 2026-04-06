@@ -25,10 +25,10 @@ const Navigation = () => {
         scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3 hover-scale">
-          <img src={cortaLogo} alt="CORTA-PL Logo" className="h-8 w-auto" height={32} />
-          <span className="font-bold text-lg tracking-tight">CORTA-PL</span>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+        <a href="#" className="flex items-center gap-2 sm:gap-3 hover-scale">
+          <img src={cortaLogo} alt="CORTA-PL Logo" className="h-7 sm:h-8 w-auto" />
+          <span className="font-bold text-base sm:text-lg tracking-tight">CORTA-PL</span>
         </a>
 
         {/* Desktop nav */}
@@ -49,6 +49,7 @@ const Navigation = () => {
         <button
           className="md:hidden p-2 rounded-lg hover:bg-secondary/50"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -56,7 +57,7 @@ const Navigation = () => {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-6 py-4 space-y-1">
+        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-4 py-3 space-y-1">
           {navItems.map((item) => (
             <a
               key={item.label}
