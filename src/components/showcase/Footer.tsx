@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
             <div className="w-4 h-4 rounded-sm bg-primary" />
           </div>
-          <span className="font-bold text-2xl tracking-tight">Pixel Pulse</span>
+          <span className="font-bold text-2xl tracking-tight">CORTA-PL</span>
         </div>
         <p className="text-muted-foreground max-w-lg mx-auto mb-8">
           Enterprise Manufacturing Intelligence for the modern food production facility.
@@ -22,7 +22,7 @@ const Footer = () => {
           <span>Edge Apps</span>
         </div>
         <div className="mt-8 text-xs text-muted-foreground/50">
-          © 2026 Pixel Pulse Production Suite. All rights reserved.
+          © 2026 CORTA-PL Production Suite. All rights reserved.
         </div>
       </div>
     </footer>

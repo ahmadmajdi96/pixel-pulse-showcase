@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          <span className="gradient-text">Pixel Pulse</span>
+          <span className="gradient-text">CORTA-PL</span>
           <br />
           <span className="text-foreground">Production Suite</span>
         </h1>
@@ -41,7 +41,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {[
             { value: "3", label: "Core Platforms" },
-            { value: "9+", label: "Edge Applications" },
+            { value: "13+", label: "Edge Applications" },
             { value: "100+", label: "Feature Screens" },
             { value: "ISA-95", label: "Compliant" },
           ].map((stat) => (

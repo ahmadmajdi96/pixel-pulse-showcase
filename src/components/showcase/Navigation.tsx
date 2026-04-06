@@ -29,7 +29,7 @@ const Navigation = () => {
           <div className="w-8 h-8 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
             <div className="w-3 h-3 rounded-sm bg-primary" />
           </div>
-          <span className="font-bold text-lg tracking-tight">Pixel Pulse</span>
+          <span className="font-bold text-lg tracking-tight">CORTA-PL</span>
         </div>
 
         {/* Desktop nav */}

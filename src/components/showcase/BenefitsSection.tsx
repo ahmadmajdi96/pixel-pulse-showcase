@@ -63,7 +63,7 @@ const BenefitsSection = () => {
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">
-            Why <span className="gradient-text">Pixel Pulse</span>?
+            Why <span className="gradient-text">CORTA-PL</span>?
           </h2>
           <p className="section-subtitle mx-auto">
             Measurable impact on your production line KPIs from day one.
@@ -71,12 +71,10 @@ const BenefitsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
-          {benefits.map((benefit, idx) => (
+          {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className={`benefit-card group hover:border-primary/30 transition-all duration-300 ${
-                idx < 5 ? "" : ""
-              }`}
+              className="benefit-card group hover:border-primary/30 transition-all duration-300"
             >
               <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20 w-fit mb-4">
                 <benefit.icon className="w-5 h-5 text-primary" />
