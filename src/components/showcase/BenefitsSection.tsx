@@ -58,7 +58,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="py-24 px-6 relative">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 relative">
       <div className="absolute inset-0 hero-gradient opacity-50" />
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -70,7 +70,7 @@ const BenefitsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {benefits.map((benefit) => (
             <div
               key={benefit.title}

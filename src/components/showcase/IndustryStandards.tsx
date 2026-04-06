@@ -13,7 +13,7 @@ const standards = [
 
 const IndustryStandards = () => {
   return (
-    <section className="py-24 px-6 border-t border-border">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 border-t border-border">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="section-title mb-4">Industry Standards Compliance</h2>
@@ -22,7 +22,7 @@ const IndustryStandards = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
           {standards.map((std) => (
             <div key={std.name} className="data-card text-center">
               <div className="font-mono font-bold text-primary text-lg mb-1">{std.name}</div>

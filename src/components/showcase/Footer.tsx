@@ -3,7 +3,7 @@ import cortaLogo from "@/assets/corta-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="py-16 px-6 border-t border-border">
+    <footer className="py-12 sm:py-16 px-4 sm:px-6 border-t border-border">
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex items-center justify-center gap-3 mb-6">
           <img src={cortaLogo} alt="CORTA-PL Logo" className="h-10 w-auto" height={40} loading="lazy" />

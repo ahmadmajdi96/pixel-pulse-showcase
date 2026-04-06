@@ -3,7 +3,7 @@ import ImpactCard from "./ImpactCard";
 
 const ModuleShowcase = () => {
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="section-title mb-4">Platform Modules</h2>
@@ -57,7 +57,7 @@ const ModuleShowcase = () => {
               <ImpactCard metrics={mod.impact} colorVar={mod.colorVar} />
 
               {/* Features Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {mod.features.map((feat) => (
                   <div key={feat.title} className="benefit-card group">
                     <div className="flex items-start gap-3">
@@ -143,7 +143,7 @@ const ModuleShowcase = () => {
                 <ImpactCard metrics={group.impact} colorVar={group.colorVar} />
 
                 {/* App cards */}
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {group.apps.map((app) => (
                     <div key={app.title} className="benefit-card group">
                       <div className="flex items-start gap-3">
