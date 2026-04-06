@@ -5,9 +5,9 @@ const layers = [
     title: "Enterprise Layer",
     subtitle: "Strategic Management & Analytics",
     systems: [
-      { name: "Production Pulse", desc: "Manufacturing Execution System", icon: Factory, color: "mes" },
-      { name: "Pixel Perfect", desc: "Quality Management System", icon: Shield, color: "qms" },
-      { name: "Pixel Pulse Build", desc: "Compliance Management System", icon: FileCheck, color: "cms" },
+      { name: "MES", desc: "Manufacturing Execution System", icon: Factory, color: "mes" },
+      { name: "QMS", desc: "Quality Management System", icon: Shield, color: "qms" },
+      { name: "CMS", desc: "Compliance Management System", icon: FileCheck, color: "cms" },
     ],
   },
   {
@@ -16,6 +16,7 @@ const layers = [
     systems: [
       { name: "MES Edge Apps", desc: "5 Operator/Supervisor/Maintenance Apps", icon: Tablet, color: "mes" },
       { name: "QMS Edge Apps", desc: "4 Technician/Manager/Kiosk/Auditor Apps", icon: Tablet, color: "qms" },
+      { name: "CMS Edge Apps", desc: "4 Regulatory/Recall/Export/Sustainability Apps", icon: Tablet, color: "cms" },
     ],
   },
 ];
@@ -44,20 +45,21 @@ const SystemArchitecture = () => {
               </div>
               <p className="text-center text-sm text-muted-foreground mb-6">{layer.subtitle}</p>
 
-              <div className={`grid gap-4 ${layer.systems.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2 max-w-4xl mx-auto"}`}>
+              <div className="grid gap-4 md:grid-cols-3">
                 {layer.systems.map((sys) => (
                   <div
                     key={sys.name}
                     className="data-card flex items-start gap-4 group"
                   >
-                    <div className={`p-3 rounded-lg bg-${sys.color}/10 border border-${sys.color}/20 shrink-0`}
+                    <div className="p-3 rounded-lg shrink-0"
                       style={{
-                        background: `hsl(var(--${sys.color === "mes" ? "mes-color" : sys.color === "qms" ? "qms-color" : "cms-color"}) / 0.1)`,
-                        borderColor: `hsl(var(--${sys.color === "mes" ? "mes-color" : sys.color === "qms" ? "qms-color" : "cms-color"}) / 0.2)`,
+                        background: `hsl(var(--${sys.color}-color) / 0.1)`,
+                        borderColor: `hsl(var(--${sys.color}-color) / 0.2)`,
+                        border: `1px solid hsl(var(--${sys.color}-color) / 0.2)`,
                       }}
                     >
                       <sys.icon className="w-6 h-6" style={{
-                        color: `hsl(var(--${sys.color === "mes" ? "mes-color" : sys.color === "qms" ? "qms-color" : "cms-color"}))`,
+                        color: `hsl(var(--${sys.color}-color))`,
                       }} />
                     </div>
                     <div>
